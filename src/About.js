@@ -3,7 +3,16 @@ import React from 'react'
 const About = () => {
 
     return (
-      <h3>This is About Page</h3>
+      <div className="jumbotron text-center">
+        <h3>Find out more about Clue Mediator </h3>
+        <strong>
+        <a target="_blank"
+          href={'https://www.cluemediator.com'}
+          rel="noopener noreferrer">
+          www.cluemediator.com
+        </a>
+        </strong>
+      </div>
     )
 }
 

@@ -4,17 +4,13 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import NotFound from './NotFound';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <h2>Clue Mediator (www.cluemediator.com)</h2>
-
-        <NavLink exact activeClassName="active" to="/">Home</NavLink><br />
-        <NavLink activeClassName="active" to="/about">About</NavLink><br />
-        <NavLink activeClassName="active" to="/contact">Contact</NavLink><br />
-
+        <Navbar />
         <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
